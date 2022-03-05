@@ -1,0 +1,30 @@
+﻿@model SessionVar.Models.Data.ViewModel.LoginModel 
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Register</h3>
+@*
+@*https://getbootstrap.com/docs/5.1/forms/overview/ *@ @*Buraan aldığımız kodu yapıştırıyoruz*@
+
+  @*//Bu kısmı sonradan ekledik.*@
+  <hr/>
+    <form method="post">
+  <div class="mb-3">
+    <p></p>
+    <label asp-for="UserId" class="form-label">Email address</label>
+    <input type="email" class="form-control" asp-for="UserId" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" asp-for="Password">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+@*Buraya kadar alınan kodu yapıştırdık.*@
+
+
